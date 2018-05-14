@@ -1,0 +1,86 @@
+#about{
+    background: url(../../../public/images/AboutUs-banner.jpg) no-repeat center top;
+    height: 491px;
+    width: 100%;
+    /*background-size: 130%;*/
+    /*animation: background-image-active 15s linear infinite;*/
+}
+/*@keyframes background-image-active {*/
+    /*from { background-size: 130%; }*/
+    /*to { background-size: 120%; }*/
+/*}*/
+
+.about-us-frame{
+    background: url(../../../public/images/background-frame.png) no-repeat center;
+    height: 485px;
+    position: relative;
+}
+
+#WHAT-WE-DO{
+    background: url(../../../public/images/home-we-doing.jpg) no-repeat center;
+    width: 100%;
+    height: 720px;
+    position: relative;
+}
+
+.what-we-do-text{
+    width: 1263px;
+    margin: 0 auto;
+    height: 720px;
+    padding-top: 1px;
+}
+
+/*#contact-information{*/
+    /*!*border: 1px solid white;*!*/
+    /*width: 1200px;*/
+    /*height: 160px;*/
+    /*margin: 0 auto;*/
+/*}*/
+
+#footer{
+    width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+}
+.section-up,.section-left,.section-right {opacity: 0;}
+.about-us-left{
+    animation: Left 2s forwards;
+}
+.about-us-right{
+    animation: Right 2s forwards;
+}
+.about-us-up{
+    animation: About 2s forwards;
+}
+@keyframes Right {
+    from{opacity:0;position:relative;left:200px;right:-200px;
+
+    }
+    to{opacity:1;position:relative;left:0;right:0;
+    }
+}
+@keyframes Left {
+    from{opacity:0;position:relative;left:-200px;right:200px;}
+    to{opacity:1;position:relative;left:0;right:0;}
+}
+@keyframes About {
+    0%{opacity:0.2;position:relative;bottom:-100px;  top:100px;}
+    50%{opacity:0.8;position:relative;bottom: 30px;top: -30px;}
+    100%{opacity:1;position:relative;bottom: 0;top: 0;}
+}
+.about-us-animation-up{
+    transition-delay: 0s;
+    animation: From-up 1s forwards;
+}
+@keyframes From-up{
+    from{opacity:0;position: relative;top:100px;}
+    to{opacity:1;position: relative;top:0;}
+}
+.about-us-animation-down{ transition-delay: 0s;
+    animation: From-down 1.5s forwards;
+}
+@keyframes From-down{
+    0%{opacity:0;transform: translateY(-50%);}
+    50%{opacity:0;transform: translateY(-50%);}
+    100%{opacity:1;transform: translateY(0);}
+}
